@@ -1,0 +1,22 @@
+
+public class Reverse
+{
+public static void main(String args[])
+	{	int count=0;
+		String rev="";
+		Scanner in=new Scanner(System.in);
+		String s=in.nextLine();
+		 int len=s.length();
+		for(int i=0;i<len-1;i--)
+	{      if(s.charAt(i)==a||s.charAt(i)==e||s.charAt(i)==i||s.charAt(i)==o||s.charAt(i)==u)
+               {	count++;
+		}
+		 rev= rev +s.charAt(i);
+		System.out.println(rev);
+		System.out.println(count);
+		
+		
+	}
+	
+	}
+}
