@@ -7,12 +7,12 @@ function validate()
 	var errorMessageCustomerId=document.getElementById("errorMessageCustomerId")
 	if(customerid.length==0)
 		{
-		errorMessageCustomerName.innerHTML ="<font color=red>Please enter your name" 
+		errorMessageCustomerId.innerHTML ="<font color=red>Please enter your id" 
 		}
 		
-	else
+	else if(customerid.length!6)
 		{
-		errorMessageCustomerName.innerHTML ="<font color=red>Welcome:"+custName
+		errorMessageCustomerId.innerHTML ="<font color=red>Welcome:"+customerid
 		}
 	
 	}
@@ -41,7 +41,7 @@ function validate()
 <td>
 <input type="text" name="customername" id="customername"></td></tr></br>
 
-</tr>
+
 <tr><td>Customer Address</td> 
 <td>
 <input type="text" name="customeraddress" id="customeraddress"></td></tr>

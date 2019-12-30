@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+var today=new Date();
+var lastdate=new Date();
+lastdate.setFullYear(2020,0,15);
+var amount=prompt("Enter bill amount:","4500")
+if(today>lastdate)
+	{
+	alert("pay bill Rs."+amount);
+	
+	}
+else
+	{
+	var day=1000*60*60*24;
+	x=(lastdate-today)/day;
+	x=Math.round(x);
+	//alert("Number of days left: " + x);
+	amount=parseInt(amount)+ parseInt(x*50);
+	
+	alert("pay bill with fine " +(x*50) +"  Rs. " + amount);
+	}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

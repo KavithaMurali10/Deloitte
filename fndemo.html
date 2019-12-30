@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>function</title>
+
+
+<script type="text/javascript" src="script.js">
+
+function display()
+{
+	var num1=prompt("Enter first number:","12");
+	var num2=prompt("Enter second number:","20");
+	var result=parseInt(num1)+parseInt(num2);
+	alert("Sum of numbers are:"+result);
+}
+function demo(){
+	var res=confirm("Do you want to continue?:");
+	if(res==true)
+		{
+		alert( "ok clicked" );
+		}
+	else
+	{	alert("Cancel clicked");}
+}
+function displaygreeting(msg){
+	if (msg==null)
+		msg="Good night";
+		alert(msg)
+}
+</script>
+</head>
+
+<body>
+
+<h1>Hello Javascript</h1>
+<input type="button" value="go" onclick="display()"></br>
+<input type="button" value="do" onclick="demo()"></br>
+<input type="button" value="Greeting1" onclick="displaygreeting()"></br>
+<input type="button" value="Greeting2" onclick="displaygreeting('Good morning')"></br>
+<input type="button" value="how" onclick="alert('How are you today?')"><br/>
+</body>
+</html>
