@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{ var customerid=document.getElementById("customerid").value
+	var errorMessageCustomerId=document.getElementById("errorMessageCustomerId")
+	if(customerid.length==0)
+		{
+		errorMessageCustomerName.innerHTML ="<font color=red>Please enter your name" 
+		}
+		
+	else
+		{
+		errorMessageCustomerName.innerHTML ="<font color=red>Welcome:"+custName
+		}
+	
+	}
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+<form>
+
+	<table cellspacing="10" cellpadding="10" align="center" border="5">
+	<caption><h2>Customer form</h2></caption>
+	
+<tr>
+<td>Customer Id </td>
+<td>
+<input type="text" name="customerid" id="customerid"></td>
+<td><span id="errorMessageCustomerId"></span></td></tr>
+<tr>
+<td>Customer name</td>
+<td>
+<input type="text" name="customername" id="customername"></td></tr></br>
+
+</tr>
+<tr><td>Customer Address</td> 
+<td>
+<input type="text" name="customeraddress" id="customeraddress"></td></tr>
+
+<tr><td>Billamount</td> 
+<td>
+<input type="text" name="billamount" id="billamount"></td></tr>
+
+<tr><td><input type="button" value="Save" onclick="validate()"></td></tr>
+
+</table>
+      </form>
+
+</body>
+</html>
