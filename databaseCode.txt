@@ -1,0 +1,29 @@
+insert into USER420
+values(1, 'BTA','rakeshsharma@gmail.com', 'Male',0,'Rakesh Sharma','password', 54560);
+
+   create table hr.user420 (
+       user_id number(10,0) not null,
+        designation varchar2(255 char),
+        email varchar2(255 char),
+        gender varchar2(255 char),
+        leader_status number(10,0),
+        name varchar2(255 char),
+        password varchar2(255 char),
+        phone_no number(10,0),
+        primary key (user_id)
+    )
+select * from user420;
+
+insert into USER420
+values(002, 'AA', 'rajnichatur01@gmail.com','Female',1,'Rajni Chaturvedi', 'abcdes', 54560);
+
+
+insert into USER420
+values(003, 'BTA', 'samireddyyyy@gmail.com', 'Male',0, 'Sami Reddy','samishubham', 40347);
+
+delete from user420 where user_id=3;
+insert into USER420
+values(004, 'GDAS','aliabbasmagar@gmail.com',  'Male',0,'Ali Abbas', 'magarbutt', 54561);
+
+insert into USER420
+values(005, 'GDAS','aditisinghal31@gmail.com',  'Female', 0,'Aditi Singhal' , 'takecare', 50270);
